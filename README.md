@@ -23,3 +23,23 @@ Below is a list of the CVEs:
 Just run the PowerShell script from an Azure PowerShell Cloud Shell.
 
 `$> ./omigod-check.ps1`
+
+Example output:
+``` PowerShell
+=== Checking VMs in qbe-iop-us-prd-sub01 ===
+OmsAgent FOUND!! - nacusanslp0001
+OmsAgent FOUND!! - nacuscmslp0001
+OmsAgent FOUND!! - nacusdmclp0001
+OmsAgent FOUND!! - nacusdpllp0001
+OmsAgent FOUND!! - nacusfwdlp0001
+OmsAgent FOUND!! - nacusfwdlp0002
+OmsAgent FOUND!! - nacusfwdlp0003
+OmsAgent FOUND!! - nacusfwdlp0004
+OmsAgent FOUND!! - nacushfblp0001
+OmsAgent FOUND!! - nacusidxlp0001
+OmsAgent FOUND!! - nacusidxlp0002
+OmsAgent FOUND!! - nacusidxlp0003
+OmsAgent FOUND!! - nacusidxlp0004
+OmsAgent FOUND!! - nacuslcmlp0001
+OmsAgent FOUND!! - nacusshdlp0001
+```
