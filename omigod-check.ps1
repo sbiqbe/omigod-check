@@ -1,4 +1,16 @@
-$subs = Get-AzSubscription
+[CmdletBinding()]
+param (
+    [String]$Subscriptions
+)
+
+$sub_list = Get-Content -Raw -Path $Subscriptions | ConvertFrom-Json
+
+if ($null -ne $sub_list) {
+    $subs = $sub_list
+} else {
+    $subs = Get-AzSubscription
+}
+
 foreach($sub in $subs) {
     Set-AzContext -SubscriptionId $sub.Id
     $RGs = Get-AzResourceGroup
