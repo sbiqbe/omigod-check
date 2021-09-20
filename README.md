@@ -32,3 +32,29 @@ myvm003, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
 myvm004, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
 myvm005, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
 ```
+
+If you want to target specific subscriptions, pass the `-Subscriptions` flag with a path to a JSON file containing the subscriptions like this:
+``` PowerShell
+$> ./omigod-check.ps1 -Subscriptions subscriptions.json
+myvm001, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
+myvm002, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
+myvm003, QBE-EO-Subscription, c987b654a321-21ba-ba21-dcba-87654321
+myvm004, QBE-EO-Subscription, c987b654a321-21ba-ba21-dcba-87654321
+myvm005, QBE-EO-Subscription, c987b654a321-21ba-ba21-dcba-87654321
+```
+
+Where `subscriptions.json` looks like this:
+```JSON
+[
+    {
+      "name": "QBE-NA-Subscription",
+      "id": "12345678-abcd-12ab-ab12-123a456b789c"  ,
+      "location": "centralus"
+    },
+    {
+      "name": "QBE-EO-Subscription",
+      "id": "c987b654a321-21ba-ba21-dcba-87654321"  ,
+      "location": "uksouth"
+    }
+]
+```
