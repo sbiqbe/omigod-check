@@ -26,20 +26,9 @@ Just run the PowerShell script from an Azure PowerShell Cloud Shell.
 
 Example output:
 ``` PowerShell
-=== Checking VMs in qbe-iop-us-prd-sub01 ===
-OmsAgent FOUND!! - nacusanslp0001
-OmsAgent FOUND!! - nacuscmslp0001
-OmsAgent FOUND!! - nacusdmclp0001
-OmsAgent FOUND!! - nacusdpllp0001
-OmsAgent FOUND!! - nacusfwdlp0001
-OmsAgent FOUND!! - nacusfwdlp0002
-OmsAgent FOUND!! - nacusfwdlp0003
-OmsAgent FOUND!! - nacusfwdlp0004
-OmsAgent FOUND!! - nacushfblp0001
-OmsAgent FOUND!! - nacusidxlp0001
-OmsAgent FOUND!! - nacusidxlp0002
-OmsAgent FOUND!! - nacusidxlp0003
-OmsAgent FOUND!! - nacusidxlp0004
-OmsAgent FOUND!! - nacuslcmlp0001
-OmsAgent FOUND!! - nacusshdlp0001
+myvm001, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
+myvm002, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
+myvm003, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
+myvm004, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
+myvm005, QBE-NA-Subscription, 12345678-abcd-12ab-ab12-123a456b789c
 ```
